@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{89D57CF1-4978-4881-A8E8-0619AA70F128}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBerry.DAL", "TaskBerry.DAL\TaskBerry.DAL.csproj", "{67D47C95-EBCA-4BCC-A51F-0AA19B01435D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBerry.Storage", "TaskBerry.Storage\TaskBerry.Storage.csproj", "{67D47C95-EBCA-4BCC-A51F-0AA19B01435D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBerry.Core", "TaskBerry.Core\TaskBerry.Core.csproj", "{6F58C6CA-E22A-4CBC-8B80-EB60896BD9F3}"
 EndProject
