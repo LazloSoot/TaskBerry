@@ -49,10 +49,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\Attributes\StringValueAttribute.cs" />
+    <Compile Include="Helpers\EnumExtentions.cs" />
+    <Compile Include="Helpers\ExpressionExtentions.cs" />
+    <Compile Include="Helpers\Extentions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ConfigSwitcherData.cs" />
+    <Compile Include="Services\MsBuildData.cs" />
+    <Compile Include="Services\Profile.cs" />
+    <Compile Include="Services\SqliteData.cs" />
+    <Compile Include="Services\VpnData.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaskBerry.DAL\TaskBerry.Storage.csproj">
+    <ProjectReference Include="..\TaskBerry.Storage\TaskBerry.Storage.csproj">
       <Project>{67d47c95-ebca-4bcc-a51f-0aa19b01435d}</Project>
       <Name>TaskBerry.Storage</Name>
     </ProjectReference>
@@ -74,8 +88,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Nlog.config" />
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\Enums\EnvironmentType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppSettings\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

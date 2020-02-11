@@ -48,7 +48,7 @@
       <Project>{6f58c6ca-e22a-4cbc-8b80-eb60896bd9f3}</Project>
       <Name>TaskBerry.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TaskBerry.DAL\TaskBerry.Storage.csproj">
+    <ProjectReference Include="..\TaskBerry.Storage\TaskBerry.Storage.csproj">
       <Project>{67d47c95-ebca-4bcc-a51f-0aa19b01435d}</Project>
       <Name>TaskBerry.Storage</Name>
     </ProjectReference>

@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Nlog.config" />
     <None Include="packages.config" />
@@ -86,6 +87,33 @@
       <Project>{e1118c5c-62fa-4280-8387-0ddbbb84deac}</Project>
       <Name>TaskBerry.Infrastructure</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alert.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LocalIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notification.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Running.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Success.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

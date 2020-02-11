@@ -41,7 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\Command\IScriptCommand.cs" />
+    <Compile Include="Contracts\Command\IScriptProvider.cs" />
+    <Compile Include="Contracts\View\IViewManager.cs" />
+    <Compile Include="Enums\ScriptTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Contracts\Command\ICommand.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
