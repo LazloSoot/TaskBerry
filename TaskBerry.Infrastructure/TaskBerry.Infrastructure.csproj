@@ -44,11 +44,14 @@
     <Compile Include="Contracts\Command\IAsyncCommand.cs" />
     <Compile Include="Contracts\Command\IScriptCommand.cs" />
     <Compile Include="Contracts\Command\IScriptProvider.cs" />
+    <Compile Include="Contracts\Services\ILogger.cs" />
     <Compile Include="Contracts\View\IViewManager.cs" />
     <Compile Include="Enums\ScriptTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="EventArgs\" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\Command\ICommand.cs" />
   </ItemGroup>

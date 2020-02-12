@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6F58C6CA-E22A-4CBC-8B80-EB60896BD9F3}</ProjectGuid>
+    <ProjectGuid>{37B5581E-DF70-48A8-BB9F-7B1F54CC764A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TaskBerry.Core</RootNamespace>
-    <AssemblyName>TaskBerry.Core</AssemblyName>
+    <RootNamespace>TaskBerry.Compositor</RootNamespace>
+    <AssemblyName>TaskBerry.Compositor</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,12 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.IO.Compression" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,44 +41,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\Attributes\StringValueAttribute.cs" />
-    <Compile Include="Helpers\EnumExtentions.cs" />
-    <Compile Include="Helpers\ExpressionExtentions.cs" />
-    <Compile Include="Helpers\Extentions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="Services\ConfigSwitcherData.cs" />
-    <Compile Include="Services\MsBuildData.cs" />
-    <Compile Include="Services\Profile.cs" />
-    <Compile Include="Services\SqliteData.cs" />
-    <Compile Include="Services\VpnData.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaskBerry.Compositor\TaskBerry.Compositor.csproj">
-      <Project>{37b5581e-df70-48a8-bb9f-7b1f54cc764a}</Project>
-      <Name>TaskBerry.Compositor</Name>
+    <ProjectReference Include="..\TaskBerry.FormsPresenter\TaskBerry.FormsPresenter.csproj">
+      <Project>{1de65956-3431-4561-a435-a261d3b08b84}</Project>
+      <Name>TaskBerry.FormsPresenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskBerry.Forms\TaskBerry.Forms.csproj">
+      <Project>{be3f6923-aceb-4a68-9671-7e548ea1163b}</Project>
+      <Name>TaskBerry.Forms</Name>
     </ProjectReference>
     <ProjectReference Include="..\TaskBerry.Infrastructure\TaskBerry.Infrastructure.csproj">
       <Project>{e1118c5c-62fa-4280-8387-0ddbbb84deac}</Project>
       <Name>TaskBerry.Infrastructure</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Helpers\Enums\EnvironmentType.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AppSettings\" />
+    <ProjectReference Include="..\TaskBerry.Logger\TaskBerry.Logger.csproj">
+      <Project>{104b90ca-294c-4ff6-be47-8eaccc44cde1}</Project>
+      <Name>TaskBerry.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskBerry.Sheduler\TaskBerry.Sheduler.csproj">
+      <Project>{8775b22d-4c97-4be9-a4e7-2feaebbb2189}</Project>
+      <Name>TaskBerry.Sheduler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskBerry.Storage\TaskBerry.Storage.csproj">
+      <Project>{67d47c95-ebca-4bcc-a51f-0aa19b01435d}</Project>
+      <Name>TaskBerry.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskBerry.TrayApp\TaskBerry.TrayApp.csproj">
+      <Project>{1db04456-0ac4-4290-b156-833ada6a506c}</Project>
+      <Name>TaskBerry.TrayApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskBerry.TrayPresenter\TaskBerry.TrayPresenter.csproj">
+      <Project>{d95ed71c-0ceb-4175-94ff-d484c268e3f2}</Project>
+      <Name>TaskBerry.TrayPresenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskBerry\TaskBerry.csproj">
+      <Project>{1c98fa72-1ad9-4b45-948d-0a9d75254dc5}</Project>
+      <Name>TaskBerry</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

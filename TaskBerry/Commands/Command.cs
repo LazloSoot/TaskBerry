@@ -1,14 +1,14 @@
-﻿using NLog;
-using System;
+﻿using System;
 using TaskBerry.Infrastructure.Contracts.Command;
+using TaskBerry.Infrastructure.Contracts.Services;
 
 namespace TaskBerry.Commands
 {
     public abstract class Command : ICommand
     {
-        protected Logger Logger { get; private set; }
+        protected ILogger Logger { get; private set; }
 
-        public Command(Logger logger)
+        public Command(ILogger logger)
         {
             Logger = logger;
         }
