@@ -66,6 +66,10 @@
     <Compile Include="Services\VpnData.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TaskBerry.Sheduler\TaskBerry.Sheduler.csproj">
+      <Project>{8775b22d-4c97-4be9-a4e7-2feaebbb2189}</Project>
+      <Name>TaskBerry.Sheduler</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TaskBerry.Storage\TaskBerry.Storage.csproj">
       <Project>{67d47c95-ebca-4bcc-a51f-0aa19b01435d}</Project>
       <Name>TaskBerry.Storage</Name>

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\Command\IAsyncCommand.cs" />
     <Compile Include="Contracts\Command\IScriptCommand.cs" />
     <Compile Include="Contracts\Command\IScriptProvider.cs" />
     <Compile Include="Contracts\View\IViewManager.cs" />

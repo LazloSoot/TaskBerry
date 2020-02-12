@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1C98FA72-1AD9-4B45-948D-0A9D75254DC5}</ProjectGuid>
+    <ProjectGuid>{8775B22D-4C97-4BE9-A4E7-2FEAEBBB2189}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TaskBerry</RootNamespace>
-    <AssemblyName>TaskBerry</AssemblyName>
+    <RootNamespace>TaskBerry.Sheduler</RootNamespace>
+    <AssemblyName>TaskBerry.Sheduler</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,16 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NLog.4.6.8\lib\net45\NLog.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.IO.Compression" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,15 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\AsyncCommand.cs" />
-    <Compile Include="Commands\Command.cs" />
-    <Compile Include="Commands\ScriptCommands\BuildRunners\DotNetInvoker.cs" />
-    <Compile Include="Commands\ScriptCommands\BuildRunners\MsBuildInvoker.cs" />
-    <Compile Include="Commands\ScriptCommands\ConfigSwitchers\DotNetConfigReplacer.cs" />
-    <Compile Include="Commands\ScriptCommands\ConfigSwitchers\DotNetConfigSwitcher.cs" />
-    <Compile Include="Commands\ScriptCommands\ConfigSwitchers\FrameworkConfigSwitcher.cs" />
-    <Compile Include="Commands\ScriptCommands\ConfigSwitchers\FrameworkConfigReplacer.cs" />
-    <Compile Include="Commands\ScriptCommands\Db\DbKiller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,10 +49,5 @@
       <Name>TaskBerry.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Nlog.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

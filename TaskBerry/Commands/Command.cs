@@ -1,17 +1,14 @@
 ﻿using NLog;
 using System;
 using TaskBerry.Infrastructure.Contracts.Command;
-using TaskBerry.Infrastructure.Enums;
 
 namespace TaskBerry.Commands
 {
-    public abstract class ScriptCommand : IScriptCommand
+    public abstract class Command : ICommand
     {
-        public abstract ScriptTypes Type { get; }
-
         protected Logger Logger { get; private set; }
 
-        public ScriptCommand(Logger logger)
+        public Command(Logger logger)
         {
             Logger = logger;
         }
