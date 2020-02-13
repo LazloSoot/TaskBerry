@@ -50,5 +50,10 @@ namespace TaskBerry.Logger
         {
             _logger.Info(ex, message);
         }
+
+        public void Shutdown()
+        {
+            LogManager.Shutdown();
+        }
     }
 }

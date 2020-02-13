@@ -1,6 +1,6 @@
-﻿using NLog;
-using System;
+﻿using System;
 using TaskBerry.Infrastructure.Contracts.Command;
+using TaskBerry.Infrastructure.Contracts.Services;
 using TaskBerry.Infrastructure.Models;
 
 namespace TaskBerry.Commands.ScriptCommands.Db
@@ -11,7 +11,7 @@ namespace TaskBerry.Commands.ScriptCommands.Db
 
         public override event EventHandler CanExecuteChanged;
 
-        public DbKiller(Logger logger)
+        public DbKiller(ILogger logger)
             : base(logger)
         {
 

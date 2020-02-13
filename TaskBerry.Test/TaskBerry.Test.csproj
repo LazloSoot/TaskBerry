@@ -52,10 +52,6 @@
       <Project>{67d47c95-ebca-4bcc-a51f-0aa19b01435d}</Project>
       <Name>TaskBerry.Storage</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TaskBerry.Forms\TaskBerry.Forms.csproj">
-      <Project>{be3f6923-aceb-4a68-9671-7e548ea1163b}</Project>
-      <Name>TaskBerry.Forms</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TaskBerry.Infrastructure\TaskBerry.Infrastructure.csproj">
       <Project>{e1118c5c-62fa-4280-8387-0ddbbb84deac}</Project>
       <Name>TaskBerry.Infrastructure</Name>

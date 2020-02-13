@@ -58,10 +58,6 @@
       <Project>{1de65956-3431-4561-a435-a261d3b08b84}</Project>
       <Name>TaskBerry.FormsPresenter</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TaskBerry.Forms\TaskBerry.Forms.csproj">
-      <Project>{be3f6923-aceb-4a68-9671-7e548ea1163b}</Project>
-      <Name>TaskBerry.Forms</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TaskBerry.Infrastructure\TaskBerry.Infrastructure.csproj">
       <Project>{e1118c5c-62fa-4280-8387-0ddbbb84deac}</Project>
       <Name>TaskBerry.Infrastructure</Name>

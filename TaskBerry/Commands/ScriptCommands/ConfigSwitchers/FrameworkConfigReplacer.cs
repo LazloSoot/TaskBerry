@@ -1,6 +1,6 @@
-﻿using NLog;
-using System;
+﻿using System;
 using TaskBerry.Infrastructure.Contracts.Command;
+using TaskBerry.Infrastructure.Contracts.Services;
 using TaskBerry.Infrastructure.Models;
 
 namespace TaskBerry.Commands.ScriptCommands.ConfigSwitchers
@@ -11,7 +11,7 @@ namespace TaskBerry.Commands.ScriptCommands.ConfigSwitchers
 
         public override event EventHandler CanExecuteChanged;
 
-        public FrameworkConfigReplacer(Logger logger)
+        public FrameworkConfigReplacer(ILogger logger)
             : base(logger)
         {
 

@@ -1,6 +1,6 @@
-﻿using NLog;
-using System;
+﻿using System;
 using TaskBerry.Infrastructure.Contracts.Command;
+using TaskBerry.Infrastructure.Contracts.Services;
 using TaskBerry.Infrastructure.Models;
 
 namespace TaskBerry.Commands.ScriptCommands.BuildRunners
@@ -11,7 +11,7 @@ namespace TaskBerry.Commands.ScriptCommands.BuildRunners
 
         public override event EventHandler CanExecuteChanged;
 
-        public MsBuildInvoker(Logger logger)
+        public MsBuildInvoker(ILogger logger)
             : base(logger)
         {
 
