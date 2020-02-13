@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TaskBerry.Infrastructure.Contracts.Services;
 using TaskBerry.Infrastructure.Contracts.View;
+using TaskBerry.Infrastructure.Contracts.View.TrayApp;
 
 namespace TaskBerry.TrayApp
 {

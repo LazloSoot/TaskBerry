@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TaskBerry.Infrastructure.Contracts.View
+namespace TaskBerry.Infrastructure.Contracts.View.TrayApp
 {
-    public interface IActionMenuView : IViewManager
+    public interface IActionMenuView
     {
+
     }
 }

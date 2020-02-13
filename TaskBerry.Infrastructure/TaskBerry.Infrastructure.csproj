@@ -50,14 +50,16 @@
     <Compile Include="Contracts\Presenter\IShedulerPresenter.cs" />
     <Compile Include="Contracts\Presenter\ITaskManagerPresenter.cs" />
     <Compile Include="Contracts\Services\ILogger.cs" />
+    <Compile Include="Contracts\Services\IStateManager.cs" />
     <Compile Include="Contracts\Services\ITaskScheduler.cs" />
-    <Compile Include="Contracts\View\IActionMenuView.cs" />
     <Compile Include="Contracts\View\IProfileManagerView.cs" />
     <Compile Include="Contracts\View\ISettingsView.cs" />
     <Compile Include="Contracts\View\IShedulerView.cs" />
     <Compile Include="Contracts\View\ITaskManagerView.cs" />
-    <Compile Include="Contracts\View\IViewManager.cs" />
+    <Compile Include="Contracts\View\TrayApp\IActionMenuView.cs" />
+    <Compile Include="Contracts\View\TrayApp\IBaseView.cs" />
     <Compile Include="Models\Scheduler\IInterval.cs" />
+    <Compile Include="Models\TaskBerry\AppStatus.cs" />
     <Compile Include="Models\TaskBerry\ScriptTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
