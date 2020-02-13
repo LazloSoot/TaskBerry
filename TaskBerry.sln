@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBerry.TrayApp", "TaskBe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBerry.Forms", "TaskBerry.Forms\TaskBerry.Forms.csproj", "{BE3F6923-ACEB-4A68-9671-7E548EA1163B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBerry.Sheduler", "TaskBerry.Sheduler\TaskBerry.Sheduler.csproj", "{8775B22D-4C97-4BE9-A4E7-2FEAEBBB2189}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBerry.Scheduler", "TaskBerry.Sheduler\TaskBerry.Scheduler.csproj", "{8775B22D-4C97-4BE9-A4E7-2FEAEBBB2189}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{D78C616E-11F7-468F-A716-94BE2B16ED2A}"
 EndProject

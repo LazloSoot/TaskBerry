@@ -44,9 +44,21 @@
     <Compile Include="Contracts\Command\IAsyncCommand.cs" />
     <Compile Include="Contracts\Command\IScriptCommand.cs" />
     <Compile Include="Contracts\Command\IScriptProvider.cs" />
+    <Compile Include="Contracts\Presenter\IActionMenuPresenter.cs" />
+    <Compile Include="Contracts\Presenter\IProfileManagerPresenter.cs" />
+    <Compile Include="Contracts\Presenter\ISettingsPresenter.cs" />
+    <Compile Include="Contracts\Presenter\IShedulerPresenter.cs" />
+    <Compile Include="Contracts\Presenter\ITaskManagerPresenter.cs" />
     <Compile Include="Contracts\Services\ILogger.cs" />
+    <Compile Include="Contracts\Services\ITaskScheduler.cs" />
+    <Compile Include="Contracts\View\IActionMenuView.cs" />
+    <Compile Include="Contracts\View\IProfileManagerView.cs" />
+    <Compile Include="Contracts\View\ISettingsView.cs" />
+    <Compile Include="Contracts\View\IShedulerView.cs" />
+    <Compile Include="Contracts\View\ITaskManagerView.cs" />
     <Compile Include="Contracts\View\IViewManager.cs" />
-    <Compile Include="Enums\ScriptTypes.cs" />
+    <Compile Include="Models\Scheduler\IInterval.cs" />
+    <Compile Include="Models\TaskBerry\ScriptTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\Command\ICommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Scheduler\Periodicity.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,11 +3,9 @@ using System.Threading.Tasks;
 
 namespace TaskBerry.Infrastructure.Contracts.Command
 {
-    public interface IAsyncCommand<T>
+    public interface IAsyncCommand<T> : ICommand
     {
         T Result { get; }
-        event EventHandler CanExecuteChanged;
-        bool CanExecute(object parameter);
         Task<T> ExecuteAsync(object parameter);
     }
 }

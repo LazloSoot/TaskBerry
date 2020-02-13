@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace TaskBerry.Infrastructure.Enums
+namespace TaskBerry.Infrastructure.Models
 {
     [Flags]
     public enum ScriptTypes

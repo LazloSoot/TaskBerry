@@ -7,8 +7,8 @@
     <ProjectGuid>{8775B22D-4C97-4BE9-A4E7-2FEAEBBB2189}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TaskBerry.Sheduler</RootNamespace>
-    <AssemblyName>TaskBerry.Sheduler</AssemblyName>
+    <RootNamespace>TaskBerry.Scheduler</RootNamespace>
+    <AssemblyName>TaskBerry.Scheduler</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\ScheduleAlreadyExistsException.cs" />
+    <Compile Include="Exceptions\ScheduleNotFoundException.cs" />
+    <Compile Include="Models\Interval.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\TaskScheduler.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TaskBerry.Infrastructure\TaskBerry.Infrastructure.csproj">
@@ -49,5 +53,6 @@
       <Name>TaskBerry.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

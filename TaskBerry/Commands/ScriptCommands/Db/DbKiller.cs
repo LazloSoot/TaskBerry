@@ -1,7 +1,7 @@
 ﻿using NLog;
 using System;
 using TaskBerry.Infrastructure.Contracts.Command;
-using TaskBerry.Infrastructure.Enums;
+using TaskBerry.Infrastructure.Models;
 
 namespace TaskBerry.Commands.ScriptCommands.Db
 {

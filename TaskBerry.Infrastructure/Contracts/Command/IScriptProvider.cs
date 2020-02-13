@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using TaskBerry.Infrastructure.Enums;
+using TaskBerry.Infrastructure.Models;
 
 namespace TaskBerry.Infrastructure.Contracts.Command
 {
