@@ -45,6 +45,7 @@
     <Compile Include="Contracts\Command\IScriptCommand.cs" />
     <Compile Include="Contracts\Command\IScriptProvider.cs" />
     <Compile Include="Contracts\Presenter\IActionMenuPresenter.cs" />
+    <Compile Include="Contracts\Presenter\IBaseMenuPresenter.cs" />
     <Compile Include="Contracts\Presenter\IProfileManagerPresenter.cs" />
     <Compile Include="Contracts\Presenter\ISettingsPresenter.cs" />
     <Compile Include="Contracts\Presenter\IShedulerPresenter.cs" />

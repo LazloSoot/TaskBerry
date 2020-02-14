@@ -66,6 +66,12 @@ namespace TaskBerry.TrayApp.Views
             _stateManager = stateManager;
             _logger = logger;
             _components = new Container();
+
+            _exitMenuItem = ToolStripMenuItemHandler("&Exit", "Closes TaskBerry application", OnExitClicked);
+            _settingsMenuItem = ToolStripMenuItemHandler("&Settings", "Shows the settings dialog", OnSettingsClicked);
+            _aboutMenuItem = ToolStripMenuItemHandler("&About", "Shows the About dialog", OnAboutClicked);
+            _clearLogsMenuItem = ToolStripMenuItemHandler("&Clear logs", "Removes all logs", OnClearLogsClicked);
+
             _notifyIcon = new NotifyIcon(_components)
             {
                 ContextMenuStrip = new ContextMenuStrip(),
@@ -84,11 +90,6 @@ namespace TaskBerry.TrayApp.Views
 
             _hiddenWindow = new Window();
             _hiddenWindow.Hide();
-
-            _exitMenuItem = ToolStripMenuItemHandler("&Exit", "Closes TaskBerry application", OnExitClicked);
-            _settingsMenuItem = ToolStripMenuItemHandler("&Settings", "Shows the settings dialog", OnSettingsClicked);
-            _aboutMenuItem = ToolStripMenuItemHandler("&About", "Shows the About dialog", OnAboutClicked);
-            _clearLogsMenuItem = ToolStripMenuItemHandler("&Clear logs", "Removes all logs", OnClearLogsClicked);
 
             OnStatusChange();
             _stateManager.OnStateChanged += ((object sender, EventArgs args) => OnStatusChange());

@@ -1,10 +1,12 @@
 ﻿using System;
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using TaskBerry.Compositor;
+using TaskBerry.Core.Services;
 using TaskBerry.Infrastructure.Contracts.Services;
-using TaskBerry.TrayApp.Views;
 
-namespace TaskBerry.TrayApp
+namespace TaskBerry.Core
 {
     static class Program
     {
@@ -20,23 +22,21 @@ namespace TaskBerry.TrayApp
 
             using (var mutex = new Mutex(false, mutexName, out createdNew))
             {
-                if(!createdNew)
+                if (!createdNew)
                 {
                     // only one instance allowed
                     return;
                 }
 
-#warning get instances from di
-                IStateManager stateManager = null;
-                ILogger logger = null;
-                var actionMenuView = new ActionMenuView(stateManager, logger);
-
+                var diContainer = new TaskBerryCompositor();
+                var logger = diContainer.GetService<ILogger>();
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 try
                 {
+                    diContainer.Register<IStateManager, StateService>();
+                    var context = diContainer.GetService<ApplicationContext>();
                     logger.LogInfo("Init menu");
-                    var context = new STAApplicationContext(actionMenuView, logger);
                     Application.Run(context);
                 }
                 catch (Exception e)

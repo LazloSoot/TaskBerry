@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TaskBerry")]
+[assembly: AssemblyTitle("TaskBerry,Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TaskBerry")]
+[assembly: AssemblyProduct("TaskBerry,Core")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6f58c6ca-e22a-4cbc-8b80-eb60896bd9f3")]
+[assembly: Guid("e2b66ed5-f166-409f-955f-1bf0e6164942")]
 
 // Version information for an assembly consists of the following four values:
 //

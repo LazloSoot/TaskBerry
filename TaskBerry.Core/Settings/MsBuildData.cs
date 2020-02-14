@@ -1,12 +1,11 @@
 ﻿using System;
 using TaskBerry.Core.Helpers;
 
-namespace TaskBerry.Core.Services
+namespace TaskBerry.Core.Settings
 {
     [Serializable]
-    public class SqliteData
+    public class MsBuildData
     {
-        public string ConnectionString { get; set; }
         public override string ToString()
         {
             return this.GetAllPropertiesStringValues();

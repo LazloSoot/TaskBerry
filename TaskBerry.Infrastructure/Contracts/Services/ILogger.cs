@@ -14,5 +14,6 @@ namespace TaskBerry.Infrastructure.Contracts.Services
         void LogError(string message, Exception ex);
 
         void Shutdown();
+        void ClearLogs();
     }
 }

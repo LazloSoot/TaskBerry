@@ -5,7 +5,7 @@ using System.Text;
 using System.Xml.Serialization;
 using TaskBerry.Core.Helpers;
 
-namespace TaskBerry.Core.Services
+namespace TaskBerry.Core.Settings
 {
     [Serializable]
     public class Profiles

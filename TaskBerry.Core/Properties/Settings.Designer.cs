@@ -34,5 +34,16 @@ namespace TaskBerry.Core.Properties {
                 this["SelectedProfileId"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::TaskBerry.Core.Settings.Profiles Profiles {
+            get {
+                return ((global::TaskBerry.Core.Settings.Profiles)(this["Profiles"]));
+            }
+            set {
+                this["Profiles"] = value;
+            }
+        }
     }
 }

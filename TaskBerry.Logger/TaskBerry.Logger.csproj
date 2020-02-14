@@ -61,4 +61,12 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>mkdir  "$(SolutionDir)Output\$(ConfigurationName)"
+XCOPY "$(ProjectDir)Nlog.config" "$(SolutionDir)Output\$(ConfigurationName)" /S /Y</PostBuildEvent>
+  </PropertyGroup>
 </Project>
