@@ -21,6 +21,11 @@ namespace TaskBerry.Logger
                 _logger = LogManager.LoadConfiguration(Properties.Settings.Default.DefaultLoggerConfigFile).GetCurrentClassLogger();
         }
 
+        public void ClearLogs()
+        {
+            throw new NotImplementedException();
+        }
+
         public void LogDebug(string message)
         {
             _logger.Debug(message);

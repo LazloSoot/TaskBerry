@@ -76,10 +76,6 @@
       <Project>{2F4B9178-B682-4C63-94D3-A2991B816DCC}</Project>
       <Name>TaskBerry.TrayApp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TaskBerry.TrayPresenter\TaskBerry.TrayPresenter.csproj">
-      <Project>{d95ed71c-0ceb-4175-94ff-d484c268e3f2}</Project>
-      <Name>TaskBerry.TrayPresenter</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TaskBerry\TaskBerry.csproj">
       <Project>{1c98fa72-1ad9-4b45-948d-0a9d75254dc5}</Project>
       <Name>TaskBerry</Name>

@@ -63,6 +63,7 @@
     <Compile Include="Helpers\Enums\EnvironmentType.cs" />
     <Compile Include="Helpers\ExpressionExtentions.cs" />
     <Compile Include="Helpers\Extentions.cs" />
+    <Compile Include="Presenters\MenuPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\StateService.cs" />
     <Compile Include="Settings\ConfigSwitcherData.cs" />

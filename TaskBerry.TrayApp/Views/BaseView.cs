@@ -12,7 +12,7 @@ using System.Reflection;
 
 namespace TaskBerry.TrayApp.Views
 {
-    public abstract class BaseView : IBaseView
+    public abstract class BaseView
     {
         private readonly ILogger _logger;
         private readonly IStateManager _stateManager;

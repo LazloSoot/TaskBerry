@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace TaskBerry.Infrastructure.Contracts.Presenter
 {
-    public interface IActionMenuPresenter
+    public interface IFormsPresenter
     {
+        void ShowAbout();
+        void ShowSettings();
     }
 }

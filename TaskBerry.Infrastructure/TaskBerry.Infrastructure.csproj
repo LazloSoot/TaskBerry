@@ -44,8 +44,6 @@
     <Compile Include="Contracts\Command\IAsyncCommand.cs" />
     <Compile Include="Contracts\Command\IScriptCommand.cs" />
     <Compile Include="Contracts\Command\IScriptProvider.cs" />
-    <Compile Include="Contracts\Presenter\IActionMenuPresenter.cs" />
-    <Compile Include="Contracts\Presenter\IBaseMenuPresenter.cs" />
     <Compile Include="Contracts\Presenter\IProfileManagerPresenter.cs" />
     <Compile Include="Contracts\Presenter\ISettingsPresenter.cs" />
     <Compile Include="Contracts\Presenter\IShedulerPresenter.cs" />
@@ -58,7 +56,6 @@
     <Compile Include="Contracts\View\IShedulerView.cs" />
     <Compile Include="Contracts\View\ITaskManagerView.cs" />
     <Compile Include="Contracts\View\TrayApp\IActionMenuView.cs" />
-    <Compile Include="Contracts\View\TrayApp\IBaseView.cs" />
     <Compile Include="Models\Scheduler\IInterval.cs" />
     <Compile Include="Models\TaskBerry\AppStatus.cs" />
     <Compile Include="Models\TaskBerry\ScriptTypes.cs" />

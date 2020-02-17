@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using TaskBerry.Infrastructure.Contracts.Command;
 using TaskBerry.Infrastructure.Contracts.Presenter;
 using TaskBerry.Infrastructure.Contracts.Services;
@@ -35,12 +36,12 @@ namespace TaskBerry.TrayPresenter
 
         private void _baseView_OnClearLogsClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            _logger.ClearLogs();
         }
 
         private void _baseView_OnExitClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Application.Exit();
         }
 
         private void _baseView_OnNotificationClicked(object sender, EventArgs e)
