@@ -14,8 +14,9 @@ namespace TaskBerry.Core.Presenters
         private readonly ILogger _logger;
 
         private readonly IFormsPresenter _formsPresenter;
-        public MainPresenter(IScriptProvider scriptProvider, IActionMenuView actionMenu, ILogger logger)
+        public MainPresenter(IFormsPresenter formsPresenter, IScriptProvider scriptProvider, IActionMenuView actionMenu, ILogger logger)
         {
+            _formsPresenter = formsPresenter;
             _logger = logger;
             _scriptProvider = scriptProvider;
             _actionMenuView = actionMenu;

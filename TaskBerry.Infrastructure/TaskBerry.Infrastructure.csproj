@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,13 +45,14 @@
     <Compile Include="Contracts\Command\IAsyncCommand.cs" />
     <Compile Include="Contracts\Command\IScriptCommand.cs" />
     <Compile Include="Contracts\Command\IScriptProvider.cs" />
-    <Compile Include="Contracts\Presenter\IProfileManagerPresenter.cs" />
-    <Compile Include="Contracts\Presenter\ISettingsPresenter.cs" />
+    <Compile Include="Contracts\Presenter\IFormsPresenter.cs" />
     <Compile Include="Contracts\Presenter\IShedulerPresenter.cs" />
     <Compile Include="Contracts\Presenter\ITaskManagerPresenter.cs" />
     <Compile Include="Contracts\Services\ILogger.cs" />
     <Compile Include="Contracts\Services\IStateManager.cs" />
     <Compile Include="Contracts\Services\ITaskScheduler.cs" />
+    <Compile Include="Contracts\Services\UI\IFormViewBuilder.cs" />
+    <Compile Include="Contracts\View\Forms\IFormView.cs" />
     <Compile Include="Contracts\View\IProfileManagerView.cs" />
     <Compile Include="Contracts\View\ISettingsView.cs" />
     <Compile Include="Contracts\View\IShedulerView.cs" />
@@ -59,7 +61,10 @@
     <Compile Include="Models\Scheduler\IInterval.cs" />
     <Compile Include="Models\TaskBerry\AppStatus.cs" />
     <Compile Include="Models\TaskBerry\ScriptTypes.cs" />
+    <Compile Include="Models\TaskBerry\WindowStartupLocation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ITabViewModel.cs" />
+    <Compile Include="ViewModels\IViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EventArgs\" />
